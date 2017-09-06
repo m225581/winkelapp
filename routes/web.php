@@ -12,13 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/kleding', function () {
-    return view('kleding');
-});
-
-Route::get('/winkelwagen', function () {
-    return view('winkelwagen');
+    return view('welcome');
 });
