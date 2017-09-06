@@ -1,5 +1,5 @@
 @extends('layout.app')
 
 @section('content')
-<h1>winkelwagen</h1>
+<h1>kleding</h1>
 @endsection
