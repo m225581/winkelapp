@@ -10,7 +10,7 @@
         @include('inc.navbar')
         <div class="Main">
         @if(Request::is('/'))
-        @include('inc.carousel')
+        @include('inc.Actiezone')
         @endif
         </div>
         <footer id="footer" class="text-center">
