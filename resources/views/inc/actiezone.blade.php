@@ -1,6 +1,6 @@
 <main>
 <div class="container">
-<div class="carousel">
+   <div class="carousel">
     <input type="radio" id="carousel-1" name="carousel[]" checked>
     <input type="radio" id="carousel-2" name="carousel[]">
     <input type="radio" id="carousel-3" name="carousel[]">
@@ -37,6 +37,26 @@
     
     </div>
         <div class="actiezone">
+            <div class="actiezone__actie1">
+            </div>
+            <div class="actiezone__actie2">
+            </div>
+            <div class="actiezone__actie3">
+            </div>
+            <div class="actiezone__actie4">
+            </div>
+            <div class="actiezone__actie5">
+            </div>
+            <div class="actiezone__actie6">
+            </div>
+            <div class="actiezone__actie7">
+            </div>
+            <div class="actiezone__actie8">
+            </div>
+            <div class="actiezone__actie9">
+            </div>
+            <div class="actiezone__actie10">
+            </div>
     </div>
   </div>
 </main>

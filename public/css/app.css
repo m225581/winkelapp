@@ -8378,12 +8378,13 @@ body {
   width: 100%;
 }
 
-div.Main {
+.Main {
   height: 1000px;
   background: #999;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 15px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -8623,5 +8624,124 @@ body {
   width: 100%;
   margin-top: 15px;
   background-color: green;
+}
+
+.actiezone__actie1 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie2 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie3 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie4 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie5 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie6 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie7 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie8 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie9 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie10 {
+  display: block;
+  height: 230px;
+  width: 213px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.kleding-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+.kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
 }
 

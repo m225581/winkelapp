@@ -12,6 +12,9 @@
         @if(Request::is('/'))
         @include('inc.Actiezone')
         @endif
+        @if(Request::is('kleding'))
+        @include('inc.keuzemenu')
+        @endif
         </div>
         <footer id="footer" class="text-center">
         <p>Copyright 2017 &copy; Beginstation</p>
