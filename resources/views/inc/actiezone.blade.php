@@ -34,8 +34,9 @@
       <label for="carousel-4"></label>
       <label for="carousel-5"></label>
     </div>
-  </div>
-</div>
+    
+    </div>
         <div class="actiezone">
     </div>
+  </div>
 </main>

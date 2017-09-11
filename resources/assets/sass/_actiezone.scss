@@ -217,9 +217,10 @@
 }
 
 .container{
+    position: relative;
     width: 100%;
     min-width: 100%;
-    margin-right: 15px;
+    overflow: auto;
 }
 
 body {
@@ -229,11 +230,9 @@ body {
 
 @include carousel(5);
 
-.actiezone{
-            width:100%;        
+.actiezone{        
             height:500px;
-            margin-top: 10px;
-            margin-left: 15px;
-            padding-right: 15px;
-            background: green;
+            width: 100%;
+            margin-top: 15px;
+            background-color: green;
 }

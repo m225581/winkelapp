@@ -8428,8 +8428,10 @@ footer {
 }
 
 .container {
+  position: relative;
   width: 100%;
   min-width: 100%;
+  overflow: auto;
 }
 
 body {
@@ -8617,11 +8619,9 @@ body {
 }
 
 .actiezone {
-  width: 100%;
   height: 500px;
-  margin-top: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
-  background: green;
+  width: 100%;
+  margin-top: 15px;
+  background-color: green;
 }
 
