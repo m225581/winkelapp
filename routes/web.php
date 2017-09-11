@@ -25,3 +25,9 @@ Route::get('/winkelwagen', function () {
 Route::get('/contacten', function () {
     return view('contacten');
 });
+
+
+//test
+Route::get('/leandertests', function() {
+    return view('leandertests');
+});
