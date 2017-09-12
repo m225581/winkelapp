@@ -34,3 +34,24 @@ Route::get('/log_in', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::get('/kleding-mannen', function () {
+    return view('kleding-mannen');
+});
+
+Route::get('/kleding-vrouwen', function () {
+    return view('kleding-vrouwen');
+});
+
+Route::get('/kleding-sport', function () {
+    return view('kleding-sport');
+});
+
+Route::get('/kleding-kinderen', function () {
+    return view('kleding-kinderen');
+});
+
+Route::get('/kleding-babies', function () {
+    return view('kleding-babies');
+});
+
