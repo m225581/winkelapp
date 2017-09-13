@@ -1,1 +1,1 @@
-@extends('layout.kleding_app')
+@extends('layout.app')

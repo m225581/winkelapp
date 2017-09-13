@@ -1,6 +1,8 @@
 div.Banner {
             height: 100px;
-            background-color: #000;
+            background-image: url(../images/Classified.png);
+            background-size: contain;
+            background-repeat: repeat-x;
             display:flex;
             justify-content: center;
             align-items: center;

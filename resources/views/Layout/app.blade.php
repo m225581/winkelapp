@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
     <head>
         <meta charset="utf-8">
         <title>Winkelapp</title>
@@ -13,11 +12,10 @@
         @include('inc.Actiezone')
         @endif
         @if(Request::is('kleding'))
-        @include('inc.keuzemenu')
+        @include('inc.kleding_page')
         @endif
         </div>
         <footer id="footer" class="text-center">
         <p>Copyright 2017 &copy; Beginstation</p>
         </footer>
     </body>
-</html>

@@ -63,14 +63,6 @@
                 <li><a href="#">T-shirts</a></li>
                 <li><a href="#">Broeken</a></li>
                 <li><a href="#">Onderbroeken</a></li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
-                  </ul>
-                </li>
               </ul>
             </li>
           </ul>
