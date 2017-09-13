@@ -27,15 +27,8 @@ Route::get('/contacten', function () {
     return view('contacten');
 });
 
-<<<<<<< HEAD
-
-//test
-Route::get('/leandertests', function() {
-    return view('leandertests');
-});
-=======
-Route::get('/log_in', function () {
-    return view('log_in');
+Route::get('/login', function () {
+    return view('login');
 });
 
 Route::get('/register', function () {
@@ -62,4 +55,3 @@ Route::get('/kleding-babies', function () {
     return view('kleding-babies');
 });
 
->>>>>>> 1fc843509f4cf69d4f58825cf7b8bd723c8a962d
