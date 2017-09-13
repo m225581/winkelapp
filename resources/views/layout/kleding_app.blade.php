@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <title>Winkelapp</title>
@@ -8,9 +9,6 @@
         <div class="Banner"></div>
         @include('inc.navbar')
         <div class="Main">
-        @if(Request::is('/'))
-        @include('inc.Actiezone')
-        @endif
         @if(Request::is('kleding'))
         @include('inc.kleding_page')
         @endif
@@ -19,3 +17,4 @@
         <p>Copyright 2017 &copy; Beginstation</p>
         </footer>
     </body>
+</html>

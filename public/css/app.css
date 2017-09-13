@@ -8350,10 +8350,916 @@ button.close {
   }
 }
 
+<<<<<<< HEAD
 #footer {
   margin-top: 30px;
   padding: 20px;
+=======
+div.Banner {
+  height: 100px;
+  background-image: url(/images/Classified.png?b47b5fa6ef8186c5c1f2a0c59a005ab1);
+  background-size: contain;
+  background-repeat: repeat-x;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 4px;
+  margin-bottom: 1px;
+}
+
+nav {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.Main {
+  height: 1000px;
+  background: #999;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+>>>>>>> 1fc843509f4cf69d4f58825cf7b8bd723c8a962d
   color: #fff;
   background: #333;
 }
 
+<<<<<<< HEAD
+=======
+/**
+ * Carousel.sass
+ * @author: Dang Van Thanh
+ * @github: https://github.com/dangvanthanh/carousel.sass
+ * @description: A Simple Carousel Pure CSS Using Sass
+ * @version: 1.0.0
+ */
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__next > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1),
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__next > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2),
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__next > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3),
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__next > label:nth-child(5),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4),
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__next > label:nth-child(1) {
+  opacity: 1 !important;
+  z-index: 3;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  background: #fcfcfc;
+  margin: 0;
+}
+
+.carousel {
+  width: 100%;
+  margin-top: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel > input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  top: 0;
+}
+
+.carousel > input[type="radio"]:checked ~ .carousel__items .carousel__item,
+.carousel > input[type="radio"]:checked ~ .carousel__prev > label,
+.carousel > input[type="radio"]:checked ~ .carousel__next > label {
+  opacity: 0;
+}
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__items .carousel__item:nth-child(1) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(1):checked ~ .carousel__nav > label:nth-child(1) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__items .carousel__item:nth-child(2) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(2):checked ~ .carousel__nav > label:nth-child(2) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__items .carousel__item:nth-child(3) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(3):checked ~ .carousel__nav > label:nth-child(3) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__items .carousel__item:nth-child(4) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(4):checked ~ .carousel__nav > label:nth-child(4) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__items .carousel__item:nth-child(5) {
+  opacity: 1;
+}
+
+.carousel > input[type="radio"]:nth-child(5):checked ~ .carousel__nav > label:nth-child(5) {
+  background: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
+
+.carousel__items {
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 400px;
+  margin-top: 15px;
+  position: relative;
+}
+
+.carousel__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
+
+.carousel__item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.carousel__prev > label,
+.carousel__next > label {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+.carousel__prev > label:hover,
+.carousel__prev > label:focus,
+.carousel__next > label:hover,
+.carousel__next > label:focus {
+  opacity: .5 !important;
+}
+
+.carousel__prev > label:before,
+.carousel__prev > label:after,
+.carousel__next > label:before,
+.carousel__next > label:after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.carousel__prev > label:before,
+.carousel__next > label:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0))), -webkit-gradient(linear, right top, left top, from(#fff), color-stop(10%, #fff), color-stop(10%, rgba(51, 51, 51, 0)));
+  background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%), linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+  width: 60%;
+  height: 60%;
+  top: 20%;
+}
+
+.carousel__prev > label {
+  left: 2%;
+}
+
+.carousel__prev > label:before {
+  left: 35%;
+  top: 20%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.carousel__next > label {
+  right: 2%;
+}
+
+.carousel__next > label:before {
+  left: 10%;
+  transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+}
+
+.carousel__nav {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.carousel__nav > label {
+  border: 1px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 .125%;
+  width: 20px;
+  height: 20px;
+}
+
+.actiezone {
+  height: 500px;
+  width: 100%;
+  margin-top: 15px;
+  background-color: green;
+}
+
+.actiezone__actie1 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie2 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie3 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie4 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie5 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie6 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie7 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie8 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie9 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.actiezone__actie10 {
+  display: block;
+  height: 230px;
+  width: 205px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.kleding-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+.kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
+}
+
+.kleding-keuze__kvp1 {
+  display: block;
+  height: 300px;
+  width: 570px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvp2 {
+  display: block;
+  height: 380px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.kleding-keuze__kvp3 {
+  display: block;
+  height: 350px;
+  width: 220px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvp4 {
+  display: block;
+  height: 350px;
+  width: 330px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvp5 {
+  display: block;
+  height: 270px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.dropdown-menu > li.kopie > a {
+  padding-left: 5px;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;
+  height: 0;
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #555;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > .active > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    display: inline;
+  }
+
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #ccc;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    border-bottom: 1px solid white;
+    border-radius: 0;
+  }
+
+  .dropdown-menu {
+    padding-left: 10px;
+  }
+
+  .dropdown-menu .dropdown-menu {
+    padding-left: 20px;
+  }
+
+  .dropdown-menu .dropdown-menu .dropdown-menu {
+    padding-left: 30px;
+  }
+
+  li.dropdown.open {
+    border: 0px solid red;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+
+  #navbar {
+    text-align: center;
+  }
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.baby-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+.kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
+}
+
+.kleding-keuze__kvb1 {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvb2 {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.kleding-keuze__kvb3 {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvb4 {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvb5 {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.kleding-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+.kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
+}
+
+.kleding-keuze__kvk1 {
+  display: block;
+  height: 300px;
+  width: 570px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvk2 {
+  display: block;
+  height: 380px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.kleding-keuze__kvk3 {
+  display: block;
+  height: 350px;
+  width: 220px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvk4 {
+  display: block;
+  height: 350px;
+  width: 330px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvk5 {
+  display: block;
+  height: 270px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.kleding-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+.kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
+}
+
+.kleding-keuze__kvv1 {
+  display: block;
+  height: 300px;
+  width: 570px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvv2 {
+  display: block;
+  height: 380px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.kleding-keuze__kvv3 {
+  display: block;
+  height: 350px;
+  width: 220px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvv4 {
+  display: block;
+  height: 350px;
+  width: 330px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvv5 {
+  display: block;
+  height: 270px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.kleding-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+.kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
+}
+
+.kleding-keuze__kvpm {
+  display: block;
+  height: 300px;
+  width: 570px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvm2 {
+  display: block;
+  height: 380px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.kleding-keuze__kvm3 {
+  display: block;
+  height: 350px;
+  width: 220px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvm4 {
+  display: block;
+  height: 350px;
+  width: 330px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvm5 {
+  display: block;
+  height: 270px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.kleding-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+.kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
+}
+
+.kleding-keuze__kvs1 {
+  display: block;
+  height: 300px;
+  width: 570px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvs2 {
+  display: block;
+  height: 380px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.kleding-keuze__kvs3 {
+  display: block;
+  height: 350px;
+  width: 220px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvs4 {
+  display: block;
+  height: 350px;
+  width: 330px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvs5 {
+  display: block;
+  height: 270px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+>>>>>>> 1fc843509f4cf69d4f58825cf7b8bd723c8a962d

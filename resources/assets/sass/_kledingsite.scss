@@ -1,0 +1,74 @@
+main.kleding{
+    padding: 15px;
+}
+
+.kleding-foto{
+    position:relative;
+    height: 200px;
+    background-color: black;
+}
+
+.sidebar{
+            display: block;
+            height: 700px;
+            width: 19%;
+            margin-top: 15px;
+            margin-right: 10px;
+            padding-top: 20px;
+            float: left;
+            background-color: white;
+}
+
+.kleding-keuze{
+            height: 700px;
+            width: 80%;
+            margin-top: 15px;
+            float: left;
+            background-color: yellow;
+    
+    &__kvp1{
+            display: block;
+            height: 300px;
+            width: 570px;
+            margin: 10px;
+            float: left;
+            background-color: black;
+    }
+    
+     &__kvp2{
+            display: block;
+            height: 380px;
+            width: 300px;
+            margin: 10px;
+            float: right;
+            background-color: black;
+    }
+    
+     &__kvp3{
+            display: block;
+            height: 350px;
+            width: 220px;
+            margin: 10px;
+            float: left;
+            background-color: black;
+    }
+    
+     &__kvp4{
+            display: block;
+            height: 350px;
+            width: 330px;
+            margin: 10px;
+            float: left;
+            background-color: black;
+    }
+    
+     &__kvp5{
+            display: block;
+            height: 270px;
+            width: 300px;
+            margin: 10px;
+            float: right;
+            background-color: black;
+    }
+    
+}
