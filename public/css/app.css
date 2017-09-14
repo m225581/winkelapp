@@ -8350,11 +8350,6 @@ button.close {
   }
 }
 
-<<<<<<< HEAD
-#footer {
-  margin-top: 30px;
-  padding: 20px;
-=======
 div.Banner {
   height: 100px;
   background-image: url(/images/Classified.png?b47b5fa6ef8186c5c1f2a0c59a005ab1);
@@ -8401,13 +8396,10 @@ footer {
   margin-left: 20px;
   margin-right: 20px;
   padding: 10px;
->>>>>>> 1fc843509f4cf69d4f58825cf7b8bd723c8a962d
   color: #fff;
   background: #333;
 }
 
-<<<<<<< HEAD
-=======
 /**
  * Carousel.sass
  * @author: Dang Van Thanh
@@ -9262,4 +9254,3 @@ main.kleding {
   background-color: black;
 }
 
->>>>>>> 1fc843509f4cf69d4f58825cf7b8bd723c8a962d
