@@ -55,3 +55,7 @@ Route::get('/kleding-babies', function () {
     return view('kleding-babies');
 });
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
