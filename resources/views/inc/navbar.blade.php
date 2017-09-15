@@ -275,7 +275,6 @@
                     
                     <li>
                         <a href="/photo"> Photo Toevoegen </a>
-
                     </li>
                 </ul>
             </li>

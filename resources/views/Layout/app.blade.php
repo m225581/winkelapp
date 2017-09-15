@@ -16,7 +16,10 @@
         @include('inc.keuzemenu')
         @endif
         @if(Request::is('photo'))
-        @include('inc.photoform')
+        @include('inc.photoAdd')
+        @endif
+        @if(Request::is('upload'))
+        @include('inc.upload')
         @endif
         </div>
         <footer id="footer" class="text-center">
