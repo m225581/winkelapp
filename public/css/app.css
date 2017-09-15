@@ -8391,6 +8391,17 @@ body {
   margin-right: 20px;
 }
 
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
 footer {
   margin-top: 20px;
   margin-left: 20px;
@@ -8721,17 +8732,6 @@ main.kleding {
   background-color: black;
 }
 
-.sidebar {
-  display: block;
-  height: 700px;
-  width: 19%;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding-top: 20px;
-  float: left;
-  background-color: white;
-}
-
 .kleding-keuze {
   height: 700px;
   width: 80%;
@@ -8888,98 +8888,13 @@ main.kleding {
   padding: 15px;
 }
 
-.baby-foto {
-  position: relative;
-  height: 200px;
-  background-color: black;
-}
-
-.sidebar {
-  display: block;
-  height: 700px;
-  width: 19%;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding-top: 20px;
-  float: left;
-  background-color: white;
-}
-
-.kleding-keuze {
-  height: 700px;
-  width: 80%;
-  margin-top: 15px;
-  float: left;
-  background-color: yellow;
-}
-
-.kleding-keuze__kvb1 {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvb2 {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-.kleding-keuze__kvb3 {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvb4 {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvb5 {
-  display: block;
-  height: 200px;
-  width: 200px;
-  margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-main.kleding {
-  padding: 15px;
-}
-
 .kleding-foto {
   position: relative;
   height: 200px;
   background-color: black;
 }
 
-.sidebar {
-  display: block;
-  height: 700px;
-  width: 19%;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding-top: 20px;
-  float: left;
-  background-color: white;
-}
-
-.kleding-keuze {
+.sub-kleding-keuze {
   height: 700px;
   width: 80%;
   margin-top: 15px;
@@ -8987,270 +8902,48 @@ main.kleding {
   background-color: yellow;
 }
 
-.kleding-keuze__kvk1 {
+.sub-kleding-keuze__kp {
   display: block;
   height: 300px;
-  width: 570px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvk2 {
-  display: block;
-  height: 380px;
   width: 300px;
   margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-.kleding-keuze__kvk3 {
-  display: block;
-  height: 350px;
-  width: 220px;
-  margin: 10px;
   float: left;
   background-color: black;
 }
 
-.kleding-keuze__kvk4 {
-  display: block;
-  height: 350px;
-  width: 330px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvk5 {
-  display: block;
-  height: 270px;
-  width: 300px;
-  margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-main.kleding {
-  padding: 15px;
-}
-
-.kleding-foto {
-  position: relative;
-  height: 200px;
-  background-color: black;
-}
-
-.sidebar {
-  display: block;
-  height: 700px;
-  width: 19%;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding-top: 20px;
-  float: left;
-  background-color: white;
-}
-
-.kleding-keuze {
-  height: 700px;
-  width: 80%;
-  margin-top: 15px;
-  float: left;
-  background-color: yellow;
-}
-
-.kleding-keuze__kvv1 {
+.sub-kleding-keuze__kp2 {
   display: block;
   height: 300px;
-  width: 570px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvv2 {
-  display: block;
-  height: 380px;
   width: 300px;
   margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-.kleding-keuze__kvv3 {
-  display: block;
-  height: 350px;
-  width: 220px;
-  margin: 10px;
   float: left;
   background-color: black;
 }
 
-.kleding-keuze__kvv4 {
-  display: block;
-  height: 350px;
-  width: 330px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvv5 {
-  display: block;
-  height: 270px;
-  width: 300px;
-  margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-main.kleding {
-  padding: 15px;
-}
-
-.kleding-foto {
-  position: relative;
-  height: 200px;
-  background-color: black;
-}
-
-.sidebar {
-  display: block;
-  height: 700px;
-  width: 19%;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding-top: 20px;
-  float: left;
-  background-color: white;
-}
-
-.kleding-keuze {
-  height: 700px;
-  width: 80%;
-  margin-top: 15px;
-  float: left;
-  background-color: yellow;
-}
-
-.kleding-keuze__kvpm {
+.sub-kleding-keuze__kp3 {
   display: block;
   height: 300px;
-  width: 570px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvm2 {
-  display: block;
-  height: 380px;
   width: 300px;
   margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-.kleding-keuze__kvm3 {
-  display: block;
-  height: 350px;
-  width: 220px;
-  margin: 10px;
   float: left;
   background-color: black;
 }
 
-.kleding-keuze__kvm4 {
-  display: block;
-  height: 350px;
-  width: 330px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvm5 {
-  display: block;
-  height: 270px;
-  width: 300px;
-  margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-main.kleding {
-  padding: 15px;
-}
-
-.kleding-foto {
-  position: relative;
-  height: 200px;
-  background-color: black;
-}
-
-.sidebar {
-  display: block;
-  height: 700px;
-  width: 19%;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding-top: 20px;
-  float: left;
-  background-color: white;
-}
-
-.kleding-keuze {
-  height: 700px;
-  width: 80%;
-  margin-top: 15px;
-  float: left;
-  background-color: yellow;
-}
-
-.kleding-keuze__kvs1 {
+.sub-kleding-keuze__kp4 {
   display: block;
   height: 300px;
-  width: 570px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvs2 {
-  display: block;
-  height: 380px;
   width: 300px;
   margin: 10px;
-  float: right;
-  background-color: black;
-}
-
-.kleding-keuze__kvs3 {
-  display: block;
-  height: 350px;
-  width: 220px;
-  margin: 10px;
   float: left;
   background-color: black;
 }
 
-.kleding-keuze__kvs4 {
+.sub-kleding-keuze__kp5 {
   display: block;
-  height: 350px;
-  width: 330px;
-  margin: 10px;
-  float: left;
-  background-color: black;
-}
-
-.kleding-keuze__kvs5 {
-  display: block;
-  height: 270px;
+  height: 300px;
   width: 300px;
   margin: 10px;
-  float: right;
+  float: left;
   background-color: black;
 }
 

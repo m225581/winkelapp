@@ -2,16 +2,7 @@
     <div class="container">
         <div class="kleding-foto">
         </div>
-        <div class="sidebar">
-        <ul style="list-style-type:none">
-          <li><h1>Kleding</h1></li><br>
-          <li><a href="kleding-mannen">Mannen Kleding</a></li>
-          <li><a href="kleding-vrouwen">Vrouwen Kleding</a></li>
-          <li><a href="kleding-kinderen">Kinder Kleding</a></li>
-          <li><a href="kleding-sport">Sport Kleding</a></li>
-          <li><a href="kleding-babies">Baby Kleding</a></li>
-        </ul>
-        </div>
+        @include('inc.sidebar')
         <div class="kleding-keuze">
             <div class="kleding-keuze__kvp1">
             </div>

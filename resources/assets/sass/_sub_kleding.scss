@@ -8,55 +8,55 @@ main.kleding{
     background-color: black;
 }
 
-.kleding-keuze{
+.sub-kleding-keuze{
             height: 700px;
             width: 80%;
             margin-top: 15px;
             float: left;
             background-color: yellow;
     
-    &__kvp1{
+    &__kp{
             display: block;
             height: 300px;
-            width: 570px;
-            margin: 10px;
-            float: left;
-            background-color: black;
-    }
-    
-     &__kvp2{
-            display: block;
-            height: 380px;
             width: 300px;
             margin: 10px;
-            float: right;
-            background-color: black;
-    }
-    
-     &__kvp3{
-            display: block;
-            height: 350px;
-            width: 220px;
-            margin: 10px;
             float: left;
             background-color: black;
     }
     
-     &__kvp4{
+     &__kp2{
             display: block;
-            height: 350px;
-            width: 330px;
-            margin: 10px;
-            float: left;
-            background-color: black;
-    }
-    
-     &__kvp5{
-            display: block;
-            height: 270px;
+            height: 300px;
             width: 300px;
             margin: 10px;
-            float: right;
+            float: left;
+            background-color: black;
+    }
+    
+     &__kp3{
+            display: block;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            float: left;
+            background-color: black;
+    }
+    
+     &__kp4{
+            display: block;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            float: left;
+            background-color: black;
+    }
+    
+     &__kp5{
+            display: block;
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            float: left;
             background-color: black;
     }
     
