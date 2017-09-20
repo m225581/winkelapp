@@ -30,6 +30,11 @@ Route::get('/contacten', function () {
 Route::get('/photo', function () {
     return view('photo');
 });
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/photo', function () {
+    return view('home');
+});

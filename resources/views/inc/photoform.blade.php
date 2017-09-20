@@ -37,52 +37,38 @@
 	</style>
 </head>
 <body>
-<div id="content">
+<div class="content">
 
-	<form method="POST" action="index.php" enctype="multipart/form-data">
-		<input type="hidden" name="size" value="1000000">
-		<div>
-			<input type="file" name="image">
-		</div>
-        <div>
-            <input type="radio" name="soort" value="M" checked>Man
-            <input type="radio" name="soort" value="V">Vrouw
-            <input type="radio" name="soort" value="J">Jongen
-            <input type="radio" name="soort" value="S">Sport
-        </div>
-		<div>
-			<textarea id="text" cols="40" rows="4" name="text" placeholder="Say something about this image..."></textarea>
-		</div>
-		<div>
-			<button type="submit" name="upload">POST</button>
-		</div>
+	<form method="POST" action="{{ URL::to('upload') }}" enctype="multipart/form-data">
+        <input type="file" name="file" id="file">
+        <input type="submit" value="upload" name="submit">
+        <input type="hidden" value="{{ csrf_field() }}" name="_token">
 	</form>
 </div>
 </body>
 </html>
 
-<?php
-	$db = mysqli_connect("localhost", "root", "", "artikelen");
-	$msg = "";
+ <?php
+//	$db = mysqli_connect("localhost", "root", "", "artikelen");
+//	$msg = "test";
 
-	if (isset($_POST['upload'])) {
-		$target = "images/".basename($_FILES['image']['name']);
-
-
-		$image = $_FILES['image']['name'];
-		$text = mysqli_real_escape_string($db, $_POST['text']);
+//	if (isset($_POST['upload'])) {
+//		$target = "images/".basename($_FILES['image']['name']);
 
 
-		$sql = "INSERT INTO images (image, text) VALUES ('$image', '$text')";
-		mysqli_query($db, $sql);
+//		$image = $_FILES['image']['name'];
+//		$text = mysqli_real_escape_string($db, $_POST['text']);
 
-		if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-			$msg = "Image uploaded successfully";
-		}else{
-			$msg = "Failed to upload image";
-		}
-	}
 
-	$result = mysqli_query($db, "SELECT * FROM artikelen");
+//		$sql = "INSERT INTO images (image, text) VALUES ('$image', '$text')";
+//		mysqli_query($db, $sql);
 
+//		if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+//			$msg = "Image uploaded successfully";
+//		}else{
+//			$msg = "Failed to upload image";
+//		}
+//	}
+
+//	$result = mysqli_query($db, "SELECT * FROM atikelen");
 ?>

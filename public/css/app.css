@@ -8350,6 +8350,24 @@ button.close {
   }
 }
 
+#img_div {
+  width: 40%;
+  padding: 5px;
+  margin: 15px;
+  border: 1px solid black;
+}
+
+#img_div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
 div.Banner {
   height: 100px;
   background-color: #000;
@@ -8379,7 +8397,8 @@ body {
 }
 
 .Main {
-  height: 1000px;
+  height: 100%;
+  min-height: 600px;
   background: #999;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
