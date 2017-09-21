@@ -21,6 +21,9 @@
         @if(Request::is('upload'))
         @include('inc.upload')
         @endif
+        @if(Request::is('instellingen'))
+        @include('inc.instellingenmenu')
+        @endif
         </div>
         <footer id="footer" class="text-center">
         <p>Copyright 2017 &copy; Beginstation</p>

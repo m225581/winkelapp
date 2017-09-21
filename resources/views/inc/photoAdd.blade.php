@@ -1,9 +1,9 @@
 
 
 <div class="content">
-    <form method="post" action="/photo" enctype="multipart/form-data">
-        Url Uploaden<input type="file" name="image" id="image">
-        <textarea name="text" cols="40" rows="4" placeholder="descryptie"></textarea>
+    <form method="post" action="/photo" enctype="multipart/form-data" style="border:1px solid black; width:300px; margin:auto; padding:10px;">
+        Url Uploaden<br><input type="text" name="image" id="image"><br><br>
+        <textarea name="text" cols="40" rows="4" placeholder="descryptie"></textarea><br><br>
         <ul>
             <input type="radio" name="soort" value="M" checked>Man
             <input type="radio" name="soort" value="V">Vrouw
@@ -19,24 +19,21 @@
         <input type="hidden" value="{{ csrf_token() }}" name="_token">
     </form>
             
-            
             <?php
                 $msg = "";
             if(isset($_POST["submit"])){
                 
-                $target = "images/".basename($_FILES['image']['name']);
                 
                 $db = mysqli_connect("localhost", "root", "", "customer");
                 
                 
-                
-                $file = $_FILES["image"]['name'];
+                $file = $_POST["image"];
                 $text = $_POST["text"];
                 $soort = $_POST["soort"];
                 
-                if(empty($_POST["text"]) or empty($_FILES["image"])){
+                if(empty($_POST["text"]) or empty($_POST["image"])){
                     echo"vull alle velden in";
-                    //exit;
+                    exit;
                 }
                 
                 $table_name = $_POST["tabel"];
@@ -47,30 +44,26 @@
                 
                 mysqli_query($db, $sql);
                 
-                if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
-                    echo "New record created successfully";
-                }
-                
             }
         ?>
         
         
-        
-        <?php
-            if(isset($_POST["submit"])){
-                
+        <div style='border:1px solid black; margin-top:10px;'>
+            <?php
+            
                 $db = mysqli_connect("localhost", "root", "", "customer");
                 $sql = "SELECT * FROM truien";
                 $result = mysqli_query($db, $sql);
-                
+            
                 while ($row = mysqli_fetch_array($result)) {
-                    echo "<div id='img_div'>";
-                        echo "<img src='images/".$row['image']."' >";
+                    echo "<div id='img_div' style='border:1px solid black;  margin-left:5px; margin-right:5px; padding:10px; margin-top:10px;'>";
+                        echo "<img src=".$row['image'].">";
                         echo "<p>".$row['text']."</p>";
                         echo "<p>".$row['soort']."</p>";
                     echo "</div>";
                 }
-            }
-        ?>
+            
+            ?>
+        </div>
     
 </div>

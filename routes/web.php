@@ -31,7 +31,12 @@ Route::get('/photo', function () {
     return view('photo');
 });
 
+Route::get('/instellingen', function () {
+    return view('instellingen');
+});
+
 Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
