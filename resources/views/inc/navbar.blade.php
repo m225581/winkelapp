@@ -10,15 +10,15 @@
       <a class="navbar-brand" href="/">Het Beginstation</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
-    <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
         <li class="dropdown">
           <a href="/kleding" class="dropdown-toggle" data-toggle="dropdown">Kleding <b class="caret"></b></a> 
           <ul class="dropdown-menu">
             <li class="dropdown dropdown-submenu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mannen Kleding</a>
+              <a href="/kleding-mannen" class="dropdown-toggle" data-toggle="dropdown">Mannen Kleding</a>
               <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Mannen Kleding</a></li>
+                <li class="kopie"><a href="/kleding-mannen">Mannen Kleding</a></li>
                 <li><a href="#">Truien</a></li>
                 <li><a href="#">T-shirts</a></li>
                 <li><a href="#">Broeken</a></li>
@@ -26,9 +26,9 @@
               </ul>
             </li>
             <li class="dropdown dropdown-submenu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Vrouwen Kleding</a>
+              <a href="/kleding-vrouwen" class="dropdown-toggle" data-toggle="dropdown">Vrouwen Kleding</a>
               <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Vrouwen Kleding</a></li>
+                <li class="kopie"><a href="/kleding-vrouwen">Vrouwen Kleding</a></li>
                 <li><a href="#">Truien</a></li>
                 <li><a href="#">T-shirts</a></li>
                 <li><a href="#">Broeken</a></li>
@@ -36,9 +36,9 @@
               </ul>
             </li>
            <li class="dropdown dropdown-submenu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">KinderKleding</a>
+              <a href="/kleding-kinderen" class="dropdown-toggle" data-toggle="dropdown">KinderKleding</a>
               <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Kinder Kleding</a></li>
+                <li class="kopie"><a href="/kleding-kinderen">Kinder Kleding</a></li>
                 <li><a href="#">Truien</a></li>
                 <li><a href="#">T-shirts</a></li>
                 <li><a href="#">Broeken</a></li>
@@ -46,9 +46,9 @@
               </ul>
             </li>
             <li class="dropdown dropdown-submenu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sport</a>
+              <a href="/kleding-sport" class="dropdown-toggle" data-toggle="dropdown">Sport</a>
               <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Sport</a></li>
+                <li class="kopie"><a href="/kleding-sport">Sport</a></li>
                 <li><a href="#">Voetbal</a></li>
                 <li><a href="#">Basketbal</a></li>
                 <li><a href="#">Rugby</a></li>
@@ -56,20 +56,13 @@
               </ul>
             </li>
             <li class="dropdown dropdown-submenu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
+              <a href="/kleding-babies" class="dropdown-toggle" data-toggle="dropdown">Baby Kleding</a>
               <ul class="dropdown-menu">
-                <li class="kopie"><a href="#">Dropdown Link 5</a></li>
-                <li><a href="#">Dropdown Submenu Link 5.1</a></li>
-                <li><a href="#">Dropdown Submenu Link 5.2</a></li>
-                <li><a href="#">Dropdown Submenu Link 5.3</a></li>
-                <li class="dropdown dropdown-submenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
-                  <ul class="dropdown-menu">
-                    <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
-                    <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
-                  </ul>
-                </li>
+                <li class="kopie"><a href="/kleding-babies">Baby Kleding</a></li>
+                <li><a href="#">Truien</a></li>
+                <li><a href="#">T-shirts</a></li>
+                <li><a href="#">Broeken</a></li>
+                <li><a href="#">Onderbroeken</a></li>
               </ul>
             </li>
           </ul>
@@ -112,7 +105,7 @@
         </li>
         <li><a href="/winkelwagen">Winkelwagen</a></li>
         <li><a href="/contacten">Contacten</a></li>
-          
+         
     </ul>
         
          
@@ -131,6 +124,10 @@
                         <div class="panel-body">
                             <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                                 {{ csrf_field() }}
+                                
+                                
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                
                                 
                                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                     <label for="name" class="col-md-4 control-label">Name</label>
@@ -204,6 +201,10 @@
                         <div class="panel-body">
                             <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                                 {{ csrf_field() }}
+                                
+                                
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                
                                 
                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                     <label for="email" class="col-md-4 control-label">E-Mail Address</label>

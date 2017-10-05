@@ -8350,27 +8350,12 @@ button.close {
   }
 }
 
-#img_div {
-  width: 23%;
-  padding: 5px;
-  margin: 15px;
-  border: 1px solid black;
-}
-
-#img_div:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
 div.Banner {
   height: 100px;
-  background-color: #000;
+  width: 405px;
+  background-image: url(/images/Classified.png?b47b5fa6ef8186c5c1f2a0c59a005ab1);
+  background-size: contain;
+  background-repeat: repeat-x;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8397,8 +8382,7 @@ body {
 }
 
 .Main {
-  height: 100%;
-  min-height: 600px;
+  min-height: 1000px;
   background: #999;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -8406,6 +8390,17 @@ body {
   padding: 15px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.sidebar {
+  display: block;
+  height: 700px;
+  width: 19%;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
 }
 
 footer {
@@ -8445,13 +8440,6 @@ footer {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  min-width: 100%;
-  overflow: auto;
 }
 
 body {
@@ -8648,7 +8636,7 @@ body {
 .actiezone__actie1 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8657,7 +8645,7 @@ body {
 .actiezone__actie2 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8666,7 +8654,7 @@ body {
 .actiezone__actie3 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8675,7 +8663,7 @@ body {
 .actiezone__actie4 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8684,7 +8672,7 @@ body {
 .actiezone__actie5 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8693,7 +8681,7 @@ body {
 .actiezone__actie6 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8702,7 +8690,7 @@ body {
 .actiezone__actie7 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8711,7 +8699,7 @@ body {
 .actiezone__actie8 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8720,7 +8708,7 @@ body {
 .actiezone__actie9 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8729,7 +8717,7 @@ body {
 .actiezone__actie10 {
   display: block;
   height: 230px;
-  width: 213px;
+  width: 205px;
   margin: 10px;
   float: left;
   background-color: black;
@@ -8745,23 +8733,57 @@ main.kleding {
   background-color: black;
 }
 
-.sidebar {
-  display: block;
-  height: 700px;
-  width: 19%;
-  margin-top: 15px;
-  margin-right: 10px;
-  padding-top: 20px;
-  float: left;
-  background-color: white;
-}
-
 .kleding-keuze {
   height: 700px;
   width: 80%;
   margin-top: 15px;
   float: left;
   background-color: yellow;
+}
+
+.kleding-keuze__kvp1 {
+  display: block;
+  height: 300px;
+  width: 570px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvp2 {
+  display: block;
+  height: 380px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
+}
+
+.kleding-keuze__kvp3 {
+  display: block;
+  height: 350px;
+  width: 220px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvp4 {
+  display: block;
+  height: 350px;
+  width: 330px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.kleding-keuze__kvp5 {
+  display: block;
+  height: 270px;
+  width: 300px;
+  margin: 10px;
+  float: right;
+  background-color: black;
 }
 
 .dropdown-menu > li.kopie > a {
@@ -8869,5 +8891,68 @@ main.kleding {
 
 #container {
   width: 400px;
+}
+
+main.kleding {
+  padding: 15px;
+}
+
+.kleding-foto {
+  position: relative;
+  height: 200px;
+  background-color: black;
+}
+
+.sub-kleding-keuze {
+  height: 700px;
+  width: 80%;
+  margin-top: 15px;
+  float: left;
+  background-color: yellow;
+}
+
+.sub-kleding-keuze__kp {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.sub-kleding-keuze__kp2 {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.sub-kleding-keuze__kp3 {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.sub-kleding-keuze__kp4 {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  float: left;
+  background-color: black;
+}
+
+.sub-kleding-keuze__kp5 {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  float: left;
+  background-color: black;
 }
 

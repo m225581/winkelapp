@@ -27,6 +27,26 @@ Route::get('/contacten', function () {
     return view('contacten');
 });
 
+Route::get('/kleding-mannen', function () {
+    return view('kleding-mannen');
+});
+
+Route::get('/kleding-vrouwen', function () {
+    return view('kleding-vrouwen');
+});
+
+Route::get('/kleding-sport', function () {
+    return view('kleding-sport');
+});
+
+Route::get('/kleding-kinderen', function () {
+    return view('kleding-kinderen');
+});
+
+Route::get('/kleding-babies', function () {
+    return view('kleding-babies');
+});
+
 Route::get('/photo', function () {
     return view('photo');
 });
